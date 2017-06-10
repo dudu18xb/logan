@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans");
+/* ------ TAGS ----------------*/
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px; }
+
+body {
+  background: linear-gradient(to top, #fff, #ccc) fixed; }
+
+.no-cssgradients body {
+  background: #333; }
+
+header {
+  background: #000;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1000; }
+  header nav {
+    float: right;
+    margin-top: 15px; }
+    header nav ul li {
+      display: inline;
+      list-style: none; }
+      header nav ul li a {
+        font: 1.2em "Open Sans", Tahoma, Verdana;
+        color: #fff;
+        transition: all 0.5s;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-left: 20px; }
+        header nav ul li a:hover {
+          color: #f00;
+          text-decoration: none; }
+
+/*----------- CLASSES ------------*/
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.center {
+  text-align: center; }
+
+.clear {
+  clear: both; }
+
+.texto {
+  position: absolute;
+  top: 200px;
+  color: #fff;
+  font-family: "Fjalla One", Arial;
+  left: 30px;
+  text-shadow: 2px 2px 1px #000; }
+  .texto p {
+    font-size: 1.4em; }
+  .texto h1 {
+    font-size: 3em; }
+  .texto .btn {
+    border: 1px solid #fff;
+    padding: 5px;
+    transition: all 0.5s;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 0 transparent; }
+    .texto .btn:hover {
+      background: #fff;
+      color: #000; }
+
+.container {
+  width: 1000px;
+  margin: auto; }
+  .container h1 {
+    font: 3em "Fjalla One", Arial;
+    margin: 50px 0px 20px 0px; }
+  .container h2 {
+    font: 2em "Fjalla One", Arial;
+    color: #ccc;
+    margin-bottom: 20px; }
+  .container p {
+    font: 1.2em "Open Sans", Tahoma, Verdana;
+    text-align: justify;
+    margin: 10px 0px; }
+
+.img {
+  width: 90%;
+  background: #fff;
+  padding: 10px 10px 30px 10px;
+  box-shadow: 1px 1px 2px #ccc;
+  /* transform:  rotate(-1deg); para deixar a imagem um pouco torto */ }
+
+/*--------------- IDs ------------------*/
+.col1 {
+  width: 30%; }
+
+.col2 {
+  width: 70%; }
+
+.top {
+  padding-top: 70px; }
+
+#menu {
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 1.5em;
+  border-radius: 5px;
+  float: right;
+  display: none; }
+
+#banner {
+  width: 100%; }
+  #banner img {
+    width: 100%; }
+
+#filmes {
+  width: 100%;
+  background: url(../images/bg.jpg) fixed;
+  padding: 50px 0px;
+  float: left; }
+  #filmes h2 {
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px; }
+  #filmes .filme {
+    width: 33%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box; }
+  #filmes img {
+    filter: sepia(80%);
+    transition: all 0.5s; }
+    #filmes img:hover {
+      filter: sepia(0%); }
+
+footer {
+  width: 100%;
+  background: #000;
+  padding: 20px 0px;
+  float: left; }
+  footer a {
+    font-size: 2.5em;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+    margin-left: 15px; }
+    footer a:hover {
+      color: #f00; }
+  footer p {
+    font: 1.2em "Open Sans", Tahoma, Verdana;
+    color: #fff; }
+
+.filmes-page .col2 {
+  width: 70%;
+  float: right; }
+
+.filmes-page .col1 {
+  width: 28%;
+  float: left; }
+
+.filmes-page .img {
+  box-shadow: 0px 0px 0px #ccc;
+  background: none;
+  filter: brightness(70%);
+  transition: all 0.5s; }
+
+.filmes-page h2 {
+  color: #000; }
+
+.filmes-page .img:hover {
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%); }
+
+.contato-container form {
+  font-family: Verdana,Tahoma,sans-serif;
+  font-size: 1.0em;
+  max-width: 100%; }
+
+.contato-container input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; }
+
+.contato-container button {
+  background-color: #000;
+  width: 74%;
+  height: 45px;
+  font-size: 1.2em;
+  float: left;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+.contato-container header {
+  position: relative !important; }
+
+.contato-container .col1 {
+  width: 40%; }
+
+.contato-container textarea {
+  width: 100%;
+  height: auto;
+  line-height: 20px;
+  max-width: 400px; }
+
+.contato-container form label {
+  color: #000;
+  font-weight: bold; }
+
+.contato-container button:hover {
+  background-color: #fff;
+  color: #000; }
+
+/*--------------- MEDIA QUERIES ----------------------*/
+@media (max-width: 320px) {
+  #menu {
+    display: block; }
+
+  nav {
+    display: none;
+    background: #000;
+    float: left;
+    position: relative;
+    z-index: 100; }
+    nav ul li {
+      display: block; }
+      nav ul li a {
+        padding: 10px;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        float: left; }
+
+  .texto {
+    top: 80px; }
+    .texto p {
+      font-size: 1em; }
+    .texto h1 {
+      font-size: 1.5em; }
+
+  .container {
+    width: 320px;
+    padding: 10px;
+    box-sizing: border-box; }
+
+  #filmes .filme {
+    width: 100%;
+    margin-left: -11px; }
+
+  .col1, .col2 {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; }
+
+  .top {
+    padding-top: 90px; }
+
+  .contato-container .col1 {
+    width: 92%; }
+
+  .container h1 {
+    font: 2.5em "Fjalla One", Arial; }
+
+  .contato-container button {
+    font-size: 1.0em; }
+
+  footer p {
+    font: 0.8em "Open Sans", Tahoma, Verdana; }
+
+  footer a {
+    font-size: 2.0em; }
+
+  #filmes img {
+    margin-left: 12px; }
+
+  .filmes-page .col1 {
+    width: 100%;
+    float: left; }
+
+  .filmes-page .col2 {
+    width: 100%;
+    float: left; } }
+@media (min-width: 321px) and (max-width: 480px) {
+  .container {
+    width: 100%; }
+
+  header nav ul li a {
+    font: 0.9em "Open Sans", Tahoma, Verdana; }
+
+  .texto {
+    top: 86px; }
+
+  .texto p {
+    font-size: 1.0em; }
+
+  .texto h1 {
+    font-size: 1.5em; }
+
+  .container h1 {
+    font: 2.0em "Fjalla One", Arial;
+    margin: 30px 0px 10px 0px; }
+
+  .container h2 {
+    font: 1.4em "Fjalla One", Arial;
+    color: #adadad; }
+
+  .container p {
+    font: 1.0em "Open Sans", Tahoma, Verdana;
+    padding: 0px 13px 0px 13px; }
+
+  .filmes .img {
+    margin-top: 14px; }
+
+  footer p {
+    font: 0.9em "Open Sans", Tahoma, Verdana; }
+
+  footer a {
+    font-size: 1.8em; }
+
+  .contato-container .col1 {
+    width: 83%;
+    margin-left: 25px; }
+
+  .contato-container button {
+    width: 100%;
+    margin-left: 10px; } }
+@media (min-width: 481px) and (max-width: 800px) {
+  .texto {
+    top: 125px; }
+
+  .container {
+    width: 100%; }
+
+  .container h1 {
+    font: 2.5em "Fjalla One", Arial;
+    margin: 30px 0px 20px 0px; }
+
+  .container h2 {
+    font: 1.8em "Fjalla One", Arial; }
+
+  .container p {
+    padding: 0px 20px 0px 20px;
+    font: 1.0em "Open Sans", Tahoma, Verdana; }
+
+  .filmes .img {
+    margin-left: 13px; }
+
+  .img {
+    width: 87%;
+    margin-left: 35px; }
+
+  #filmes img {
+    margin-left: 14px; }
+
+  header nav ul li a {
+    font: 1.0em "Open Sans", Tahoma, Verdana; }
+
+  .filmes p {
+    padding: 0px 20px 0px 20px; }
+
+  footer {
+    padding: 15px 0px; }
+
+  footer a {
+    font-size: 2.2em; }
+
+  footer p {
+    font: 1.0em "Open Sans", Tahoma, Verdana; }
+
+  .contato-container .col1 {
+    padding: 0px 0px 0px 40px; } }
+/*MANDA NO EMAIL ATE O DIA 31/03 anderson@faculdadealfa.com.br trabalho pos*/
+
+/*# sourceMappingURL=style.css.map */
